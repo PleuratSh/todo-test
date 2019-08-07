@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+body {
+    font-family: 'Open Sans';
+    letter-spacing: .3px;    
+}
+.app-container {
+    width: 1100px;
+    display: block;
+    height: auto;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 20px 10px;
+}
+.button-filter .btn-md {
+    margin: 0 25px 0 0;
+    border-radius: 0;
+}
+form {
+    margin: 20px 0;
+}
+.counter {
+    margin-left: 10px;
+    background: #f4f4f4;
+    padding: 2px 8px;
+    border-radius: 3px;
+    color: #999;
+}
+.main-form input {
+    width: 500px;
+    border: 1px solid #ccc;
+    height: 45px;
+    border-radius:2px;
+    padding-left: 10px;
+}
+.main-form .custom-btn {
+    width: 160px;
+    background: #46b44f;
+    color: #fff;
+    height: 45px;
+    border-radius: 3px;
+    border: 0;
+    margin-bottom: 10px;    
+}
+.todo-list {
+    margin: 20px 0;
+    border-bottom: 1px solid #d3d0e0;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+input[type=checkbox] {
+    margin-right: 5px;
+}
+
+.dropdown-action {
+    float: right;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: 0 0 0 0 !important;
+}
+
+.main-form input:focus{
+    outline: none !important;
+    border: 1px solid #ccc;
+}
+
+.btn-section {
+    margin-top: 15px;
+}
+.dots {
+    width: 15px;
+}
+.dots:hover {
+    cursor: pointer;
+}
