@@ -14,9 +14,6 @@ export default class Form extends Component {
     }
 
     handleSubmit = (e) => {
-        if(this.state.text === "") {
-            alert("You must write something");
-        }
         e.preventDefault();
         this.props.addByProps({
             id:shortid.generate(),
