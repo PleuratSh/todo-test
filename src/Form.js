@@ -14,8 +14,10 @@ export default class Form extends Component {
     }
 
     handleSubmit = (e) => {
+        if(this.state.text === "") {
+            alert("You must write something");
+        }
         e.preventDefault();
-        //  this function is sent to TodoApp.js <Form /> as props
         this.props.addByProps({
             id:shortid.generate(),
             text:this.state.text,
@@ -26,10 +28,17 @@ export default class Form extends Component {
         })
     }
 
+    onCancel = (e) => {
+        e.preventDefault();
+        this.setState({
+            text:''
+        })
+    }
+
     render() {
+
         return (
             <div>
-                {/* Main Form */}
                 <form className="main-form" onSubmit={this.handleSubmit}>
                     <input 
                     type="text"
@@ -40,7 +49,7 @@ export default class Form extends Component {
                     />
                     <div className="btn-section">
                     <button className="custom-btn btn-medium" onSubmit={this.handleSubmit}>+ Add Task</button>
-                    <button className="custom-btn btn-simple btn-medium">Cancel</button>
+                    <button className="custom-btn btn-simple btn-medium" onClick={this.onCancel}>Cancel</button>
                     </div>
                 </form>
             </div>
