@@ -40,6 +40,7 @@ export default class Form extends Component {
                     />
                     <div className="btn-section">
                     <button className="custom-btn btn-medium" onSubmit={this.handleSubmit}>+ Add Task</button>
+                    <button className="custom-btn btn-simple btn-medium">Cancel</button>
                     </div>
                 </form>
             </div>
